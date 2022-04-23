@@ -7,7 +7,7 @@ public class Test {
         DriverManager.registerDriver((Driver) new com.mysql.cj.jdbc.Driver());
 
         Connection conn = DriverManager.getConnection("jdbc:mysql://cisvm-winsrv-mysql1.unfcsd.unf.edu:3306/team2",
-                "N01422856", "Spring202234562856");
+                "N#", "Passcode");
 
         var stmt = conn.createStatement();
         ResultSet rset = stmt.executeQuery("show tables");
